@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Evening Reception Edit | The Art of Showing Up | VELORO</title>
+  <meta name="description" content="Explore VELORO's evening reception formalwear guide: grand dinner jackets, black-tie tailoring, satin peak lapels and evening suiting.">
+  <meta name="theme-color" content="#1C2430">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/data.js"></script>
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body data-page="home2">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="occasion-guide-hero">
+      <div class="container">
+        <div class="breadcrumb-bar" style="border-color:rgba(255,255,255,.15);margin-bottom:24px;">
+          <a href="index.html" style="color:#CCD7DE;">Home</a>
+          <i data-icon="chevron-right"></i>
+          <a href="home2.html" style="color:#CCD7DE;">Wedding Atelier (Home 2)</a>
+          <i data-icon="chevron-right"></i>
+          <span style="color:#D8BD89;">02 · The Evening Reception</span>
+        </div>
+        <span class="eyebrow light-eyebrow">THE ART OF SHOWING UP · CHAPTER 02</span>
+        <h1>Evening Elegance &<br><em>The Grand Reception.</em></h1>
+        <p>When the sun sets and champagne flutes clink beneath ballroom chandeliers. Command the evening with sculpted black-tie dinner jackets, midnight navy silhouettes and bespoke satin peak lapels.</p>
+        <div class="occasion-guide-actions">
+          <a href="#reception-collection" class="btn btn-gold">Explore Reception Pieces <i data-icon="arrow-up-right"></i></a>
+          <a href="home2.html" class="btn btn-hero-outline"><i data-icon="arrow-left"></i> Back to Wedding Atelier</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial Spotlight Banner -->
+    <section class="section">
+      <div class="container">
+        <div class="occasion-editorial-banner">
+          <img src="assets/images/reception-hero-edit.webp" alt="Model in bespoke champagne and black satin peak lapel evening tuxedo" loading="lazy">
+          <div class="occasion-editorial-copy">
+            <span class="eyebrow">AFTER-HOURS OPULENCE</span>
+            <h2>Made for the <em>milestone toast.</em></h2>
+            <p>An evening reception gives you permission to embrace rich tactile fabrics. Jet-black duchess satin, champagne jacquards, and deep midnight navy wools absorb and reflect chandelier glow with mesmerising richness.</p>
+            <div class="about-editorial-notes" style="margin-bottom:24px;">
+              <span><i data-icon="check"></i> Sculpted peak lapels for an athletic V-shaped chest profile</span>
+              <span><i data-icon="check"></i> Hand-covered duchess satin buttons and jetted pockets</span>
+              <span><i data-icon="check"></i> Pure silk bow ties and French-cuff mother-of-pearl accents</span>
+            </div>
+            <a href="contact.html?subject=Wedding%20%26%20Occasion%20Wear#enquiry" class="inline-link">
+              Enquire In Showroom for Reception Fittings <i data-icon="arrow-up-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Three Sartorial Rules for Evening Receptions -->
+        <div class="occasion-rules-grid">
+          <article class="occasion-rule-card">
+            <span class="rule-no">RULE NO. 01</span>
+            <h3>Embrace Midnight Navy</h3>
+            <p>In low evening lighting, midnight navy appears darker and richer than true black, making it the preferred choice for red carpet ceremonies.</p>
+          </article>
+          <article class="occasion-rule-card">
+            <span class="rule-no">RULE NO. 02</span>
+            <h3>Proportion of Lapels</h3>
+            <p>A broad peak lapel (9.5 to 11 cm) frames your shoulders and draws the viewer's gaze upward toward your collar and smile.</p>
+          </article>
+          <article class="occasion-rule-card">
+            <span class="rule-no">RULE NO. 03</span>
+            <h3>Polished Patent Footwear</h3>
+            <p>Pair evening suiting with mirror-shined black Oxford shoes or velvet evening slippers. Keep leather lines pristine and understated.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curated Products for Reception -->
+    <section class="section section-cream" id="reception-collection">
+      <div class="container">
+        <div class="section-top">
+          <div>
+            <span class="eyebrow">CURATED EVENING ATELIER</span>
+            <h2>Recommended for the <em>reception.</em></h2>
+            <p>Statement dinner jackets, midnight wool tailoring and luxurious silk finishing.</p>
+          </div>
+          <a href="products.html?category=Wedding%20%26%20Occasion%20Wear" class="inline-link">
+            All Occasionwear <i data-icon="arrow-up-right"></i>
+          </a>
+        </div>
+        <div class="product-grid" id="reception-products-grid">
+          <!-- Populated by script or static cards -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation to Other Chapters -->
+    <section class="final-cta">
+      <div class="container">
+        <span class="eyebrow">EXPLORE MORE OCCASIONS</span>
+        <h2>Continue the celebration <em>journey.</em></h2>
+        <div class="cta-row">
+          <a href="occasion-ceremony.html" class="btn btn-outline-dark">Chapter 01: The Wedding Ceremony <i data-icon="arrow-left"></i></a>
+          <a href="occasion-guest.html" class="btn btn-gold">Chapter 03: The Guest Edit <i data-icon="arrow-right"></i></a>
+          <a href="home2.html" class="btn btn-dark"><i data-icon="arrow-left"></i> Back to Wedding Atelier</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <div id="ui-root"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const area = document.getElementById('reception-products-grid');
+      if(area && window.VELORO_PRODUCTS){
+        const items = ['VL-127', 'VL-118', 'VL-107', 'VL-129']
+          .map(id => window.VELORO_PRODUCTS.find(p => p.id === id))
+          .filter(Boolean);
+        if(window.productCard) {
+          area.innerHTML = items.map(window.productCard).join('');
+        }
+      }
+    });
+  </script>
+</body>
+</html>
